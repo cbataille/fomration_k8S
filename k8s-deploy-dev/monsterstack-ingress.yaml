@@ -4,8 +4,8 @@ metadata:
   name: monsterstack
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
+    kubernetes.io/ingress.class: nginx
 spec:
-ingressClass: nginx
   rules:
     - host: monsterstack.cbataill.kluster.io # à changer si envie/besoin
       http:
